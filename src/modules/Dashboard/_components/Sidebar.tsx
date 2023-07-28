@@ -3,6 +3,7 @@ import ImageComponent from "@/components/ImageComponent";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { Grid, PopCard, Message, Setting, Logout } from "@/components/Icons";
+import Logo from "@/components/Icons/Logo";
 
 const navigation = [
   {
@@ -42,13 +43,14 @@ const Sidebar = () => {
   const router = useRouter();
   return (
     <div className="flex grow flex-col overflow-y-auto bg-white px-[2.375rem] py-10 border-r shadow-[0px_3px_4px_0px_rgba(0,0,0,0.03)] border-borderColor">
-      <ImageComponent
+    {/* <ImageComponent
         src="/assets/images/logo.svg"
         fill
         figClassName="w-[9.9rem] h-[3.3rem]"
         className="object-contain flex-shrink-0"
         alt=""
-      />
+      /> */}
+      <Logo />
       <nav className="flex mt-2 flex-1 flex-col">
         <ul role="list" className="space-y-2">
           <li>
