@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  p {
+    @apply font-display text-sm font-normal text-secondary;
+  }
+}
+.bd {
+  border: 1px solid red;
+}
+.AtScrollHide::-webkit-scrollbar {
+    width: 0 !important;
+    height: 0 !important;
+}
+.AtScrollHide {
+    scrollbar-width: none !important;
+}
